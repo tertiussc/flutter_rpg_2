@@ -15,10 +15,16 @@ class _HomeState extends State<Home> {
         title: Text('Your Characters'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Container(
-          padding: EdgeInsets.all(16),
-          child: Text('Home Screen'),
+      body: Container(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Text('Character list'),
+            FilledButton(
+              onPressed: () {},
+              child: Text('Create New'),
+            )
+          ],
         ),
       ),
     );
