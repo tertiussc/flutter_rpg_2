@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
       body: Container(
         padding: EdgeInsets.all(16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('Character list',
                 style: Theme.of(context).textTheme.bodyMedium),
