@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rpg_2/screens/home.dart';
+import 'package:flutter_rpg_2/theme.dart';
 
 void main() {
-  runApp(MaterialApp(home: Home()));
+  runApp(
+    MaterialApp(
+      theme: primaryTheme,
+      home: Home(),
+    ),
+  );
 }
 
 // Temporary Sandbox for testing widget components

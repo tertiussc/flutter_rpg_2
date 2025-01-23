@@ -10,3 +10,17 @@ class AppColors {
   static Color successColor = Color.fromRGBO(9, 149, 110, 1);
   static Color highlightColor = Color.fromRGBO(212, 172, 13, 1);
 }
+
+ThemeData primaryTheme = ThemeData(
+  // Seed color
+  colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
+  // Scaffold theme
+  scaffoldBackgroundColor: AppColors.secondaryAccent,
+  // AppBar theme
+  appBarTheme: AppBarTheme(
+    backgroundColor: AppColors.secondaryColor,
+    foregroundColor: AppColors.titleColor,
+    surfaceTintColor: Colors.transparent,
+    centerTitle: true,
+  ),
+);
