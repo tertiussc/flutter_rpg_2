@@ -19,7 +19,12 @@ class _HomeState extends State<Home> {
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
-            Text('Character list'),
+            Text('Character list',
+                style: Theme.of(context).textTheme.bodyMedium),
+            Text('Character list',
+                style: Theme.of(context).textTheme.headlineMedium),
+            Text('Character list',
+                style: Theme.of(context).textTheme.titleMedium),
             FilledButton(
               onPressed: () {},
               child: Text('Create New'),

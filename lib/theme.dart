@@ -33,7 +33,7 @@ ThemeData primaryTheme = ThemeData(
     ),
     // headline text
     headlineMedium: TextStyle(
-      color: AppColors.highlightColor,
+      color: AppColors.textColor,
       fontSize: 16,
       fontWeight: FontWeight.bold,
     ),
