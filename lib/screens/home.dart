@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rpg_2/shared/styaled_text.dart';
+import 'package:flutter_rpg_2/shared/styled_text.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
