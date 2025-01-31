@@ -11,7 +11,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List characters = ['mario', 'luigu', 'peach', 'toad', 'bowser', 'koopa'];
+  List characters = ['mario', 'luigi', 'peach', 'toad', 'bowser', 'koopa'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
         child: Column(
           children: [
             Expanded(
-              // Always wrap listview in expanded to avoid overflow
+              // Always wrap list view in expanded to avoid overflow
               child: ListView.builder(
                 itemCount: characters.length,
                 itemBuilder: (_, index) {
@@ -34,9 +34,7 @@ class _HomeState extends State<Home> {
             ),
             StyledButton(
               onPressed: () {},
-              child: Container(
-                child: StyledHeading('Create New'),
-              ),
+              child: StyledHeading('Create New'),
             ),
           ],
         ),
