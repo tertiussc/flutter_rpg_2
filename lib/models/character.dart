@@ -14,6 +14,9 @@ class Character with Stats {
     required this.id,
   });
 
+  // getter
+  bool get isFav => _isFav;
+
   void toggleIsFav() {
     _isFav = !_isFav;
   }
