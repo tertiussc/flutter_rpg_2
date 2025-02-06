@@ -1,7 +1,9 @@
 import 'package:flutter_rpg_2/models/stats.dart';
+import 'package:flutter_rpg_2/models/vocation.dart';
 
 class Character with Stats {
   // Variables
+  final Vocation vocation;
   final String name;
   final String slogan;
   final int id;
@@ -11,6 +13,7 @@ class Character with Stats {
   Character({
     required this.name,
     required this.slogan,
+    required this.vocation,
     required this.id,
   });
 
