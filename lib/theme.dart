@@ -12,46 +12,53 @@ class AppColors {
 }
 
 ThemeData primaryTheme = ThemeData(
-  // Seed color
-  colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
-  // Scaffold theme
-  scaffoldBackgroundColor: AppColors.secondaryAccent,
-  // AppBar theme
-  appBarTheme: AppBarTheme(
-    backgroundColor: AppColors.secondaryColor,
-    foregroundColor: AppColors.titleColor,
-    surfaceTintColor: Colors.transparent,
-    centerTitle: true,
-  ),
-  // Text theme
-  textTheme: TextTheme(
-    // body text
-    bodyMedium: TextStyle(
-      color: AppColors.textColor,
-      fontSize: 16,
-      letterSpacing: 1,
+    // Seed color
+    colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
+    // Scaffold theme
+    scaffoldBackgroundColor: AppColors.secondaryAccent,
+    // AppBar theme
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.secondaryColor,
+      foregroundColor: AppColors.titleColor,
+      surfaceTintColor: Colors.transparent,
+      centerTitle: true,
     ),
-    // headline text
-    headlineMedium: TextStyle(
-      color: AppColors.textColor,
-      fontSize: 16,
-      fontWeight: FontWeight.bold,
+    // Text theme
+    textTheme: TextTheme(
+      // body text
+      bodyMedium: TextStyle(
+        color: AppColors.textColor,
+        fontSize: 16,
+        letterSpacing: 1,
+      ),
+      // headline text
+      headlineMedium: TextStyle(
+        color: AppColors.textColor,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+      ),
+      // title text
+      titleMedium: TextStyle(
+        color: AppColors.titleColor,
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 2,
+      ),
     ),
-    // title text
-    titleMedium: TextStyle(
-      color: AppColors.titleColor,
-      fontSize: 18,
-      fontWeight: FontWeight.bold,
-      letterSpacing: 2,
-    ),
-  ),
 
-  // Card theme
-  cardTheme: CardTheme(
-    color: AppColors.secondaryColor,
-    surfaceTintColor: Colors.transparent,
-    shape: RoundedRectangleBorder(),
-    shadowColor: Colors.transparent,
-    margin: EdgeInsets.only(bottom: 16),
-  ),
-);
+    // Card theme
+    cardTheme: CardTheme(
+      color: AppColors.secondaryColor,
+      surfaceTintColor: Colors.transparent,
+      shape: RoundedRectangleBorder(),
+      shadowColor: Colors.transparent,
+      margin: EdgeInsets.only(bottom: 16),
+    ),
+    // Input decoraction theme
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: AppColors.secondaryColor.withValues(alpha: 0.5),
+      border: InputBorder.none,
+      labelStyle: TextStyle(color: AppColors.textColor),
+      prefixIconColor: AppColors.textColor,
+    ));

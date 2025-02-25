@@ -35,6 +35,29 @@ class _CreateState extends State<Create> {
               child: StyledText('Create a name & a slogan for your character.'),
             ),
             const SizedBox(height: 30),
+            // Input and slogan
+            TextField(
+              cursorColor: AppColors.textColor,
+              style: TextStyle(color: AppColors.textColor),
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.person_2),
+                label: StyledText('Character Name'),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            TextField(
+              cursorColor: AppColors.textColor,
+              style: TextStyle(color: AppColors.textColor),
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.chat),
+                label: StyledText('Character Slogan'),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            )
           ],
         ),
       ),
