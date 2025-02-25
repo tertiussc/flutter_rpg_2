@@ -34,6 +34,7 @@ class _CreateState extends State<Create> {
             Center(
               child: StyledText('Create a name & a slogan for your character.'),
             ),
+            const SizedBox(height: 30),
           ],
         ),
       ),
