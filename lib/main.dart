@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rpg_2/screens/create/create.dart';
 import 'package:flutter_rpg_2/screens/home.dart';
 import 'package:flutter_rpg_2/theme.dart';
 
@@ -6,7 +7,7 @@ void main() {
   runApp(
     MaterialApp(
       theme: primaryTheme,
-      home: Home(),
+      home: Create(),
     ),
   );
 }
