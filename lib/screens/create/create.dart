@@ -10,6 +10,18 @@ class Create extends StatefulWidget {
 }
 
 class _CreateState extends State<Create> {
+  // Create text editing controller
+  final _nameController = TextEditingController();
+  final _sloganController = TextEditingController();
+
+  // Dispose of un used controllers to free up memory
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _sloganController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +49,7 @@ class _CreateState extends State<Create> {
             const SizedBox(height: 30),
             // Input and slogan
             TextField(
+              controller: _nameController,
               cursorColor: AppColors.textColor,
               style: TextStyle(color: AppColors.textColor),
               decoration: InputDecoration(
@@ -48,6 +61,7 @@ class _CreateState extends State<Create> {
               height: 20,
             ),
             TextField(
+              controller: _sloganController,
               cursorColor: AppColors.textColor,
               style: TextStyle(color: AppColors.textColor),
               decoration: InputDecoration(
