@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_rpg_2/shared/styled_button.dart';
 import 'package:flutter_rpg_2/shared/styled_text.dart';
 import 'package:flutter_rpg_2/theme.dart';
 
@@ -20,6 +21,20 @@ class _CreateState extends State<Create> {
     _nameController.dispose();
     _sloganController.dispose();
     super.dispose();
+  }
+
+  // Manage the form data, submit handler
+  void handleSubmit() {
+    if (_nameController.text.trim().isEmpty) {
+      print('Name Empty');
+      return;
+    }
+    if (_sloganController.text.trim().isEmpty) {
+      print('Slogan Empty');
+      return;
+    }
+    print(_nameController.text);
+    print(_sloganController.text);
   }
 
   @override
@@ -71,7 +86,13 @@ class _CreateState extends State<Create> {
             ),
             SizedBox(
               height: 20,
-            )
+            ),
+            Center(
+              child: StyledButton(
+                onPressed: handleSubmit,
+                child: StyledHeading('Create Character'),
+              ),
+            ),
           ],
         ),
       ),
